@@ -42,80 +42,17 @@ if(!dateInput.value) {
 
 function handleGreetingAndDishRecommendation(currentHour) {
 	let greeting, dishRecommendation;
-	if(currentHour < 12) {
-		greeting = "Good Morning";
-		dishRecommendation = "Pancakes";
-	} else if(currentHour < 18) {
-		greeting = "Good Afternoon";
-		dishRecommendation = "Caesar Salad";
-	} else {
-		greeting = "Good Evening";
-		dishRecommendation = "Grilled Salmon";
-	}
-	return {
+
+    return {
 		greeting,
 		dishRecommendation
 	};
 }
 
 function handleDrinkRecommendation(greeting) {
-	let drinkRecommendation;
-	switch(greeting) {
-		case "Good Morning":
-			drinkRecommendation = "Coffee";
-			break;
-		case "Good Afternoon":
-			drinkRecommendation = "Iced Tea";
-			break;
-		case "Good Evening":
-			drinkRecommendation = "Red Wine";
-			break;
-	}
-	return drinkRecommendation;
-}
+	let drinkRecommendation = "";
 
-function handleFridaySpecial(currentHOur, currentDay) {
-	let specialDinnerCombo;
-	if(currentHour >= 18 && currentDay === 5) {
-		fridayBlock.style.display = "block";
-		specialDinnerCombo = "Steak and Fries";
-		console.log(specialDinnerCombo);
-	} else {
-		specialDinnerCombo = "None";
-	}
-	return specialDinnerCombo;
-}
-
-function handleLoyaltyBonus(numVisitsThisMonth, currentHour) {
-	let loyaltyBonus;
-	if(numVisitsThisMonth > 10) {
-		if(currentHour >= 18) {
-			console.log(currentHour);
-			loyaltyBonus = 'Complimentary Cheesecake';
-		} else {
-			loyaltyBonus = 'Complimentary Lemonade';
-		}
-	} else {
-		loyaltyBonus = "";
-	}
-	return loyaltyBonus;
-}
-
-function handleDateChange(currentHour, currentDay) {
-	greeting = handleGreetingAndDishRecommendation(currentHour).greeting;
-	dishRecommendation = handleGreetingAndDishRecommendation(currentHour).dishRecommendation;
-	drinkRecommendation = handleDrinkRecommendation(greeting);
-	dessertRecommendation = currentHour < 14 ? "Blueberry Muffin" : "Blueberry Pie";
-	specialDinnerCombo = handleFridaySpecial(currentHour, currentDay);
-
-	mealRecommendationDisplay.innerHTML = dishRecommendation;
-	drinkRecommendationDisplay.innerHTML = drinkRecommendation;
-	dessertRecommendationDisplay.innerHTML = dessertRecommendation;
-	greetingDisplay.innerHTML = `${greeting}, ${guestName}!`;
-	if(fridayBlock.style.display === 'block') {
-		fridaySpecial.innerHTML = specialDinnerCombo;
-	}
-
+    return drinkRecommendation;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -145,4 +82,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		handleDateChange(currentHour, currentDay);
 	});
 })
-
