@@ -7,58 +7,62 @@
 
     <title>The Baratie</title>
 </head>
+
 <body>
     <nav>
         <ul>
+            <li><a href="./index.html">HOME</a></li>
             <li><a href="./html/contact.html">CONTACT ME</a></li>
         </ul>
     </nav>
 
-    <div class="input-section">
+    <div class="container">
+		<h1>Welcome to the Baratie!</h1>
+        <img src="./assets/baratieonepiece.jpg" alt="The Baratie"/>
+        <br/> 
+		<div class="input-section">
+			<label for="customerName">Your Name:</label>
+			<input type="text" id="customerName" placeholder="Enter your name">
+		</div>
 
-        <h1> Welcome To the Baratie!</h1>
-        <img src="./assets/baratieonepiece.jpg" alt="The Baratie">
-        <label for="customerName">Your Name:</label>
-        <input type="text" id="customerName" placeholder="Enter your name">
+		<div class="input-section">
+			<label for="currentDateTime">Select Date and Time:</label>
+			<input type="datetime-local" id="currentDateTime">
+		</div>
+
+		<div class="greeting-section">
+			<p id="greetingMessage" class='special-display'>Hello, Guest!</p>
+		</div>
+
+		<div>
+			<div class="recommendation-section">
+				<h2>Meal Recommendation</h2>
+				<p>We recommend trying our special</p>
+				<p id="mealRecommendation" class='special-display'></p>
+			</div>
+
+			<div class="recommendation-section">
+				<h2>Drink Recommendation</h2>
+				<p>Pair your meal with</p>
+				<p id="drinkRecommendation" class='special-display'></p>
+			</div>
+
+			<div class="recommendation-section">
+				<h2>Dessert Recommendation</h2>
+				<p>Don't forget our famous</p>
+				<p id="dessertRecommendation" class='special-display'></p>
+			</div>
+
+            </div>
     </div>
 
-    <div class="input-section">
-        <label for="currentDateTime">Select Date and Time:</label>
-        <input type="datetime-local" id="currentDateTime">
-    </div>
+    <script src="handle-restaurant.js"></script>
+    
+</body>
+</html>
 
-    <div class="greeting-section">
-        <p id="greetingMessage" class='special-display'>Hello, Guest!</p>
-    </div>
-
-    <div>
-        <div class="recommendation-section">
-            <h2>Meal Recommendation</h2>
-            <p>We recommend trying our special</p>
-            <p id="mealRecommendation" class='special-display'></p>
-        </div>
-
-        <div class="recommendation-section">
-            <h2>Drink Recommendation</h2>
-            <p>Pair your meal with</p>
-            <p id="drinkRecommendation" class='special-display'></p>
-        </div>
-
-        <div class="recommendation-section">
-            <h2>Dessert Recommendation</h2>
-            <p>Don't forget our famous</p>
-            <p id="dessertRecommendation" class='special-display'></p>
-        </div>
-
-    <script src="./js/handle-restaurant.js"></script>
-
-    </body>
-
-
-    <footer>
+<footer>
     <p>&copy; 2024 Alexander Egerev. All rights reserved. </p>
     <p>&copy; 1997 by Eiichiro Oda/SHUEISHA Inc. </p>
     <p>&copy; 1999 Eiichiro Oda/Shueisha, Toei Animation </p>
     </footer>
-    
-</html>
