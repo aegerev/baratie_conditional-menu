@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+<!--     
+    <script src="./js/handle-restaurant.js"></script> -->
 
     <title>The Baratie</title>
 </head>
@@ -16,10 +18,10 @@
         </ul>
     </nav>
 
-    <div class="container">
-		<h1>Welcome to the Baratie!</h1>
-        <img src="./assets/baratieonepiece.jpg" alt="The Baratie"/>
-        <br/> 
+    <body>
+	<div class="container">
+		<h1>Welcome to Our Restaurant!</h1>
+
 		<div class="input-section">
 			<label for="customerName">Your Name:</label>
 			<input type="text" id="customerName" placeholder="Enter your name">
@@ -53,16 +55,31 @@
 				<p id="dessertRecommendation" class='special-display'></p>
 			</div>
 
-            </div>
-    </div>
+			<div class="recommendation-section" id='friday'>
+				<h2>Friday Evening Special</h2>
+				<p>Join us this Friday evening for</p>
+				<p id="fridaySpecial" class='special-display'></p>
+			</div>
+		</div>
 
-    <script src="handle-restaurant.js"></script>
-    
+        <br/> <br/>
+		<div>
+			<div class="loyalty-section">
+                <h1>The Baratie's Loyalty Program</h1>
+				<label for="visitCount">Number of Visits this Month:</label>
+				<input type="number" id="visitCount" placeholder="Enter your visit count">
+				<p>Loyalty Bonus</p>
+				<p id="loyaltyBonus" class='special-display'></p>
+			</div>
+		</div>
+
+		<script src="./js/handle-restaurant.js"></script>
 </body>
+
 </html>
 
 <footer>
-    <p>&copy; 2024 Alexander Egerev. All rights reserved. </p>
+    <p>&copy; 2024 New Atlantica Studios. All rights reserved. </p>
     <p>&copy; 1997 by Eiichiro Oda/SHUEISHA Inc. </p>
     <p>&copy; 1999 Eiichiro Oda/Shueisha, Toei Animation </p>
-    </footer>
+</footer>
