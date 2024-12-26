@@ -8,7 +8,7 @@ body {
 
 /* Navigation Styles */
 nav {
-    background-color: #FF0000;
+    background-color: #007FFF;
     text-align: center;
     position: sticky;
     padding: 25px 0;
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFD800;
+    color: #238E68;
 }
 
 .container {
@@ -43,7 +43,7 @@ nav a:hover {
 	max-width: 800px;
 	margin: 40px auto;
 	padding: 20px;
-	background-color: #FFD800;
+	background-color: #E47833;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 }
@@ -68,7 +68,7 @@ img {
 }
 
 .input-section {
-	background-color: #FF0000;
+	background-color: #38B0DE;
 }
 
 .recommendation-section {
@@ -130,56 +130,10 @@ button:hover {
 	display: none;
 }
 
-#contact {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    background-color: #20B2AA;
-    padding: 60px;
-    margin: 20px 0px;
-    border-radius: 10px;
-    color: #FFA000;
-}
-
-
-#contact h2 {
-    text-align: center;
-}
-
-#contact p {
-    text-align: center;
-}
-
-.contact-email {
-    font-size: 1.2em;
-    color: #66FF66;
-}
-
-.input-field {
-    width: 100%;
-    padding: 15px;
-    margin: 15px 0;
-    border: 1px solid #FCE883;
-    border-radius: 5px;
-}
-
-.submit-button {
-    background-color: #000099;
-    color: #6696FF;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.submit-button:hover {
-    background-color: #0056b3;
-}
-
 footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    color: #FCC200;  
     padding: 20px; 
     font-size: 1em;
 }
