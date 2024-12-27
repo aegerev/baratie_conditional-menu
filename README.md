@@ -26,6 +26,6 @@ This README provides an overview of the frontend for the Baratie Restaurant webs
 This project is licensed under the MIT License - see the LICENSE file for details.   
 
 ## Copyright:
-© 2024 New Atlantica Studios. All rights reserved.
-© 1997 by Eiichiro Oda/SHUEISHA Inc.
+© 2024 New Atlantica Studios. All rights reserved. <br/>
+© 1997 by Eiichiro Oda/SHUEISHA Inc.<br/>
 © 1999 Eiichiro Oda/Shueisha, Toei Animation
